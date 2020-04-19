@@ -5,11 +5,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 
 <body>
-    <h1>Venta de casas y Departamentos Esclusivos de lujo</h1>
-    <p>Hola soy Eduardo Alcober y <br> este es mi proyecto web</p>
+    <!--
+    Header le ponemos dos clases para luego reutilizar ciertas partes de la apariencia,
+    separando el header del index.html de uno más simple en el resto de la navegación
+-->
+    <header class="site-header inicio">
+        <div class="contenedor">
+            <div class="barra">
+                <!--flexbox y cssgrid nuevo standard para posicionar elementos-->
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logotipo de Bienes raíces">
+                    <!-- valores target etiqueta a
+        _blank: abre nueva pestaña, recomendado para enlaces externos
+        _self : default. En la misma página
+
+         img no tiene etiqueta de cierre
+         width, heigth ajustan tamaño, aunque mejor CSS
+         Imágenes de fondo con texto encima etc, CSS, either <img...
+
+
+          -->
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <h1>Venta de casas y Departamentos Esclusivos de lujo</h1>
+        </div> <!-- contenedor -->
+    </header>
+
+    <section>
+        <h2>Más Sobre nosotros</h2>
+
+        <div>
+            <img src="img/icono1.svg" alt="Icono Seguridad">
+            <h3>Seguridad</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur minima quisquam? Nesciunt
+                dolorem
+                nam
+                aliquam deleniti molestias exercitationem maxime doloremque reprehenderit? Dolore hic error dolorum
+                soluta
+                ratione odit placeat.</p>
+        </div>
+
+        <div>
+            <img src="img/icono2.svg" alt="Icono Mejor precio">
+            <h3>El Mejor Precio</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur minima quisquam? Nesciunt
+                dolorem
+                nam
+                aliquam deleniti molestias exercitationem maxime doloremque reprehenderit? Dolore hic error dolorum
+                soluta
+                ratione odit placeat.</p>
+
+        </div>
+
+        <div>
+            <img src="img/icono3.svg" alt="Icono a Tiempo">
+            <h3>A Tiempo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur minima quisquam? Nesciunt
+                dolorem
+                nam
+                aliquam deleniti molestias exercitationem maxime doloremque reprehenderit? Dolore hic error dolorum
+                soluta
+                ratione odit placeat.</p>
+        </div>
+
+    </section>
+    <main>
+        <h2>Casas y Depas en venta</h2>
+
+
+        <img src="img/anuncio1.jpg" alt="Anuncio casa en el lago">
+        <h3>Casa de Lujo en el Lago</h3>
+        <p>Casa en el lago con excelente vista,acabados de Lujo a un excelente precio</p>
+        <p>$3,000,000</p>
+        <a href="#">Ver Propiedad</a>
+
+        <!-- # utilizado cuando aún no tenemos el enlace -->
+        <img src="img/anuncio2.jpg" alt="Anuncio casa en el lago">
+        <h3>Casa Terminados de Lujo</h3>
+        <p>Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
+        <p>$2,000,000</p>
+        <a href="#">Ver Propiedad</a>
+
+        <img src="img/anuncio3.jpg" alt="Anuncio casa en el lago">
+        <h3>Casa con Alberca</h3>
+        <p>Casa con alberca y acabados de Lujo,en la ciudad, excelente oportunidad</p>
+        <p>$3,000,000</p>
+        <a href="#">Ver Propiedad</a>
+
+        <a href="anuncios.html">Ver Todas</a>
+
+    </main>
+    <section>
+        <h2>Encuentra la casa de tus sueños</h2>
+        <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
+        <a href="contacto.html">Contáctanos</a>
+    </section>
+    <section>
+        <h3>Nuestro Blog</h3>
+        <article>
+            <img src="img/blog1.jpg" alt="Entrada de Blog">
+            <h4>Terraza en el techo de tu casa</h4>
+            <p>Escrito el: <em>20/10/2019</em> por: Admin</p>
+            <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero
+            </p>
+        </article>
+        <article>
+
+            <img src="img/blog2.jpg" alt="Entrada de Blog">
+            <h4>Guía para la decoración de tu hogar</h4>
+            <p>Escrito el:<strong> 20/10/2019</strong> por: Admin</p>
+            <p>Maximiza el espacio en tu hogar con esta guía, aprende a combinar muebles y colores para darle vida a tu
+                espacio
+            </p>
+        </article>
+
+    </section>
+    <section>
+        <header>
+            <h3>Testimoniales</h3>
+        </header>
+        <blockquote>
+            El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con
+            todas
+            mis expectativas.
+        </blockquote>
+
+        <p>- Juan de la Torre.</p>
+    </section>
+    <footer>
+        <nav class="navegacion">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="anuncios.html">Anuncios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <p>Todos los Derechos Reservados 2020 &copy;</p>
+    </footer>
 </body>
 
 </html>

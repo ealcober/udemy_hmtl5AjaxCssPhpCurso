@@ -1,0 +1,70 @@
+
+/*
+h1{ selector
+    color: blue;propiedad: valor
+    font-size: 40px;
+}
+
+Archivo se lee de arriba a abajo 
+y lo último visto es lo que se aplica
+por eso se llama en cascada CSS
+*/
+/*
+
+#site-header{
+    background-color: red;
+}
+.encabezado{
+    color:darkred;
+}
+*/
+/* GLOBALES */
+.contenedor{
+    max-width: 1200px; /*todo el espacio disponible, maximo 1200 px*/
+    /* 4 parametros le pasamos, 1º arriba (0 no align vertical),2º derecha, 3º abajo 4º izda ver reloj
+    margin: 0 auto 0 auto | si hay 2 valores que se repiten, si pones solo los dos primeros se repiten en los dos segundos, valdría con "0 auto"
+    */
+    /*para tratar márgenes por separado*/
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* HEADER dos clases juntas. Detectar tamaño pantalla con 100vh, poner un mínimo con min-height */
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+}
+.barra{
+    /*align-items permite alinear verticalmente*/
+    display: flex; /*usamos flexbox, flex-end derecha y flex-start derecha, center,*/
+    justify-content: space-between;
+    align-items: center; /*end hacia abajo start hacia arriba*/
+    padding-top: 30px; /* elimina espacio que mete margin y desplaza un poquito hacia abajola barra, espacio hacia adentro
+    frente a separación con otro elemento hacia afuera */
+}
+/*Navegación, definiendo la clase navegacion, y con a, los elementos hijos de la clase*/
+/*rgba(255,255,255,.3) acepta tranparencia y alfa channel*/
+/*rgb(255,255,255,) acepta tranparencia y alfa channel*/
+/*hsl(255,255,255,1) acepta tranparencia y alfa channel hue saturation lightness*/
+/*hsla(255,255,255,1) acepta tranparencia y alfa channel hue saturation lightness*/
+
+.navegacion a{
+    color: white;
+    text-decoration: none; /*eliminar linea debajo de los enlaces*/
+    font-size: 18px;
+margin-right: 20px; /*separacion con el siguiente elemento del menu*/
+
+
+}
+.navegacion a:hover{ /* pseudo selector para al pasar por encima cambiar color enlaces */
+    color: #71b100;
+}
+.navegacion a:last-of-type{
+    margin-right: 0;
+
+
+}
